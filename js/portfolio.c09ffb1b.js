@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["portfolio"],{"2df5":function(t,e,n){"use strict";n.r(e);var r=function(){var t=this,e=t.$createElement;t._self._c;return t._m(0)},i=[function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{attrs:{id:"port"}},[n("h1",{attrs:{id:"titles"}},[t._v("Portafolio")])])}],o=(n("eec1"),n("2877")),c={},s=Object(o["a"])(c,r,i,!1,null,null,null);e["default"]=s.exports},"45b0":function(t,e,n){},eec1:function(t,e,n){"use strict";var r=n("45b0"),i=n.n(r);i.a}}]);
+//# sourceMappingURL=portfolio.c09ffb1b.js.map
