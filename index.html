@@ -1,1 +1,308 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Portafolio personal de Juan Manuel Restrepo, soy alguien que le gusta aprender de manera autodidacta, con algunos conocimientos en backed y fronted"><meta name="keywords" content="Desarrollo web, paginas web, backend, frontend, desarrollo de software, proyectos tecnologicos"><link rel="icon" href="./favicon.ico"><title>Juan Restrepo - Desarrollador fronted</title><link href="/css/Me.be0881a0.css" rel="prefetch"><link href="/css/PageNotFound.f4266f3c.css" rel="prefetch"><link href="/css/curriculum.d51c78db.css" rel="prefetch"><link href="/css/portfolio.0ebbd6d0.css" rel="prefetch"><link href="/css/skill.cd471b5c.css" rel="prefetch"><link href="/js/Me.f7130130.js" rel="prefetch"><link href="/js/PageNotFound.983d6acf.js" rel="prefetch"><link href="/js/curriculum.a097f86e.js" rel="prefetch"><link href="/js/portfolio.b3256f56.js" rel="prefetch"><link href="/js/skill.a48ad6e9.js" rel="prefetch"><link href="/css/app.b8abb24a.css" rel="preload" as="style"><link href="/css/chunk-vendors.fe87f757.css" rel="preload" as="style"><link href="/js/app.bdb0314f.js" rel="preload" as="script"><link href="/js/chunk-vendors.8b1850d1.js" rel="preload" as="script"><link href="/css/chunk-vendors.fe87f757.css" rel="stylesheet"><link href="/css/app.b8abb24a.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but Portafolio de Juan Manuel Restrepo Moreno doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/js/chunk-vendors.8b1850d1.js"></script><script src="/js/app.bdb0314f.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Juan Manuel Restrepo — Desarrollador de software y docente de informática. VueJS, NodeJS, JavaScript, Python, Java, SQL, MongoDB, QA y metodologías ágiles." />
+  <title>Juan Manuel Restrepo | Desarrollador & Docente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido" data-i18n="a11y.skip">Saltar al contenido</a>
+
+  <header class="site-header" id="inicio">
+    <nav class="nav" aria-label="Principal" data-i18n-attr="aria-label:a11y.nav">
+      <a class="nav__brand" href="#inicio">JMR</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-i18n-attr="aria-label:a11y.menuOpen" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__end">
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="#perfil" data-i18n="nav.profile">Perfil</a></li>
+          <li><a href="#habilidades" data-i18n="nav.skills">Habilidades</a></li>
+          <li><a href="#experiencia" data-i18n="nav.experience">Experiencia</a></li>
+          <li><a href="#educacion" data-i18n="nav.education">Educación</a></li>
+          <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+        <div class="lang-switch" role="group" data-i18n-attr="aria-label:a11y.lang" aria-label="Idioma">
+          <button type="button" class="lang-switch__btn is-active" data-lang="es" aria-pressed="true">ES</button>
+          <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow" data-i18n="hero.eyebrow">Presentación profesional</p>
+        <h1 class="hero__title">
+          Juan Manuel Restrepo
+        </h1>
+        <p class="hero__subtitle">
+          <span data-i18n="hero.subtitle">Desarrollador Junior · Tecnólogo en Sistemas · Ingeniería en Sistemas </span>
+        </p>
+        <p class="hero__lead" data-i18n="hero.lead">
+          Conecto el desarrollo de software con la enseñanza de informática: código, calidad, metodologías ágiles y formación bilingüe en entornos IB.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#experiencia" data-i18n="hero.ctaExperience">Ver trayectoria</a>
+          <a class="btn btn--ghost" href="#contacto" data-i18n="hero.ctaContact">Contactar</a>
+          <a class="btn btn--outline" data-cv-download href="assets/CV-Juan-Restrepo-ES.pdf" download="CV-Juan-Manuel-Restrepo-ES.pdf" data-i18n="hero.ctaCv">Descargar CV</a>
+        </div>
+        <div class="hero__social">
+          <a class="social-link" href="https://github.com/juanrex04" target="_blank" rel="noopener noreferrer">
+            <span class="social-link__icon" aria-hidden="true">GH</span>
+            <span>github.com/juanrex04</span>
+          </a>
+          <a class="social-link" href="https://www.linkedin.com/in/juan-manuel-restrepo-moreno" target="_blank" rel="noopener noreferrer">
+            <span class="social-link__icon social-link__icon--in" aria-hidden="true">in</span>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+        <ul class="hero__meta">
+          <li data-i18n="hero.meta1">Español - nativo</li>
+          <li data-i18n="hero.meta2">Inglés - B2+</li>
+          <li data-i18n="hero.meta3">SCRUM - QA - SDLC</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="perfil">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__label" data-i18n="profile.label">Perfil profesional</span>
+          <h2 data-i18n="profile.title">Desarrollo y docencia con enfoque técnico</h2>
+        </header>
+        <div class="profile-grid">
+          <div class="profile-card profile-card--dev">
+            <h3 data-i18n="profile.devTitle">Como programador</h3>
+            <p data-i18n="profile.devText">
+              Tecnólogo en Sistemas de la Información e Ingeniero en Sistemas en formación, con experiencia en desarrollo de software, pruebas de calidad (QA) y metodologías ágiles (SCRUM). Domino VueJS, NodeJS, JavaScript, Python, Java SE, Firebase, SQL y MongoDB, con más de cuatro años en entornos tecnológicos de alto nivel.
+            </p>
+          </div>
+          <div class="profile-card profile-card--teach">
+            <h3 data-i18n="profile.teachTitle">Como docente</h3>
+            <p data-i18n="profile.teachText">
+              Diseño y superviso proyectos de programación en el Diploma Programme IB y el Primary Years Programme del IB: enseñando POO, estructuras de datos, algoritmos, Scratch, Arduino usando recursos digitales bilingües, alineados con estándares reales de la industria e internacionales.
+            </p>
+          </div>
+        </div>
+        <p class="profile-note" data-i18n="profile.note">
+          Autodidacta, orientado a la mejora continua, con pensamiento lógico, documentación técnica y resolución de problemas aplicados tanto en producción como en el aula.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="habilidades">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__label" data-i18n="skills.label">Habilidades técnicas</span>
+          <h2 data-i18n="skills.title">Stack y competencias</h2>
+        </header>
+        <div class="skills-grid">
+          <article class="skill-block">
+            <h3 data-i18n="skills.langTitle">Lenguajes</h3>
+            <ul class="tag-list">
+              <li>VueJS</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>Java SE</li>
+              <li>SQL - MongoDB</li>
+              <li>Firebase</li>
+            </ul>
+          </article>
+          <article class="skill-block">
+            <h3 data-i18n="skills.methodTitle">Metodologías</h3>
+            <ul class="tag-list">
+              <li data-i18n="skills.method1">SCRUM</li>
+              <li data-i18n="skills.method2">Desarrollo ágil</li>
+              <li data-i18n="skills.method3">SDLC</li>
+              <li data-i18n="skills.method4">STEM - STEAM</li>
+            </ul>
+          </article>
+          <article class="skill-block">
+            <h3 data-i18n="skills.qaTitle">QA &amp; testing</h3>
+            <ul class="tag-list tag-list--plain">
+              <li data-i18n="skills.qa1">Pruebas funcionales</li>
+              <li data-i18n="skills.qa2">Reporte de bugs</li>
+              <li data-i18n="skills.qa3">Validación de software</li>
+              <li data-i18n="skills.qa4">Documentación técnica</li>
+            </ul>
+          </article>
+          <article class="skill-block">
+            <h3 data-i18n="skills.toolsTitle">Herramientas &amp; otros</h3>
+            <ul class="tag-list tag-list--plain">
+              <li>GitHub</li>
+              <li data-i18n="skills.tools2">Google Workspace</li>
+              <li>APIs</li>
+              <li data-i18n="skills.tools4">POO</li>
+              <li data-i18n="skills.tools5">Gestión ágil de proyectos</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experiencia">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__label" data-i18n="exp.label">Experiencia</span>
+          <h2 data-i18n="exp.title">Industria y aula</h2>
+        </header>
+
+        <div class="timeline">
+          <article class="timeline__item timeline__item--current">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <div class="timeline__meta">
+                <time datetime="2025-07" data-i18n="exp.canaverales.date">Jul 2025 – Presente</time>
+                <span class="badge badge--teach" data-i18n="badge.teach">Docencia</span>
+              </div>
+              <h3>Colegio Cañaverales International School</h3>
+              <p class="timeline__role" data-i18n="exp.canaverales.role">Docente de Informática · Primary Years Programme IB</p>
+              <ul>
+                <li data-i18n="exp.canaverales.i1">Secuencias de programación visual (MakeCode y Arduino) y lógica computacional integradas en plataformas digitales.</li>
+                <li data-i18n="exp.canaverales.i2">Gestión de herramientas tecnológicas y aprendizaje en línea en entorno bilingüe.</li>
+                <li data-i18n="exp.canaverales.i3">Recursos didácticos digitales e interactivos con enfoque técnico en diseño de contenido.</li>
+              </ul>
+              <div class="highlights" data-i18n-html="exp.canaverales.highlights">
+                <strong>Logros:</strong> Desarrollo de proyectos integradores de acuerdo al <strong>POI</strong> permitiendo una transversalidad significativa y mejorar apropiación de los estudiantes a entornos digitales y una ciudadania digital de mentalidad abierta e internacional.
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <div class="timeline__meta">
+                <time datetime="2021-08/2025-06" data-i18n="exp.british.date">Ago 2021 – Jun 2025</time>
+                <span class="badge badge--teach" data-i18n="badge.teach">Docencia</span>
+              </div>
+              <h3>Colegio Británico — The British School Cali</h3>
+              <p class="timeline__role" data-i18n="exp.british.role">Docente de Informática · Diploma Programme IB</p>
+              <ul>
+                <li data-i18n="exp.british.i1">Supervisión de Internal Assessment IB: diseño, codificación, pruebas y documentación.</li>
+                <li data-i18n="exp.british.i2">SCRUM aplicado a proyectos escolares conectados con la industria.</li>
+                <li data-i18n="exp.british.i3">POO, estructuras de datos, bases de datos y algoritmos (grados 9°,10° y 11°) en entorno bilingüe.</li>
+                <li data-i18n="exp.british.i4">Materiales técnicos y curriculares en inglés y español para Computer Science IB.</li>
+              </ul>
+              <div class="highlights" data-i18n-html="exp.british.highlights">
+                <strong>Logros:</strong> Mejora en el plan de área en la implementación de proyectos integradores usando la programación como base; además de mejoras en el desarrollo de las habilidades tecnologicas de los estudiantes, desarrollando planes de seguiiento y mejora para estudiantes de acuerdo a las necesidades del IB y específicas de cada estudiantes.
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__body">
+              <div class="timeline__meta">
+                <time datetime="2020-03/2021-02" data-i18n="exp.bm.date">Mar 2020 – Feb 2021</time>
+                <span class="badge badge--dev" data-i18n="badge.dev">Desarrollo</span>
+              </div>
+              <h3>BM Software</h3>
+              <p class="timeline__role" data-i18n="exp.bm.role">Tester / Desarrollador Junior</p>
+              <ul>
+                <li data-i18n="exp.bm.i1">QA funcional, reportes de bugs y validación en ciclo completo de desarrollo.</li>
+                <li data-i18n="exp.bm.i2">Documentación técnica: manuales, registros de pruebas y reportes.</li>
+                <li data-i18n="exp.bm.i3">Funcionalidades menores en JavaScript y Java SE bajo supervisión senior.</li>
+                <li data-i18n="exp.bm.i4">Trabajo colaborativo en equipos multidisciplinarios ágiles.</li>
+              </ul>
+              <div class="highlights" data-i18n-html="exp.bm.highlights">
+                <strong>Logros:</strong> experiencia en producción, documentación sólida y competencias SCRUM que hoy aplico y enseño.
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted" id="educacion">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__label" data-i18n="edu.label">Formación</span>
+          <h2 data-i18n="edu.title">Educación y certificaciones</h2>
+        </header>
+
+        <div class="edu-grid">
+          <div>
+            <h3 class="edu-grid__title" data-i18n="edu.sectionTitle">Educación</h3>
+            <ul class="edu-list">
+              <li>
+                <strong>Universidad INCCA de Colombia</strong>
+                <span data-i18n="edu.incca">Ingeniería en Sistemas · Sep 2025 – Actualidad</span>
+              </li>
+              <li>
+                <strong>Fundación Centro Colombiano de Estudios Profesionales</strong>
+                <span data-i18n="edu.fund">Tecnología en Sistemas de la Información · Feb 2017 – Nov 2019</span>
+              </li>
+              <li>
+                <strong data-i18n="edu.diplomaLabel">Diplomado</strong>
+                <span data-i18n="edu.diploma">Gestión e Innovación Estratégica de Proyectos Ágiles · Dic 2019 – Ene 2020</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="edu-grid__title" data-i18n="edu.certTitle">Certificaciones relevantes</h3>
+            <ul class="cert-list">
+              <li><span data-i18n="edu.cert1">Claves para crear su programa del IB: Programa de la Escuela Primaria</span> <em>International Baccalaureate · Feb 2026</em></li>
+              <li><span data-i18n="edu.cert2">Aplicación del marco de trabajo SCRUM para proyectos de desarrollo de software</span> <em>SENA · Oct 2024</em></li>
+              <li><span data-i18n="edu.cert3">Asesoría para el uso de las TIC en la formación</span> <em>SENA · Oct 2024</em></li>
+              <li><span data-i18n="edu.cert4">Construcción de actividades de aprendizaje integrando TIC</span> <em>SENA · Oct 2024</em></li>
+              <li><span data-i18n="edu.cert5">Computer Science Cat. 1 (IB)</span> <em>International Baccalaureate · Oct–Nov 2023</em></li>
+              <li><span data-i18n="edu.cert6">Estrategias didácticas de la Educación STEM</span> <em data-i18n="edu.date">ÚNICA · Ago–Sep 2022</em></li>
+              <li><span data-i18n="edu.cert7">La enseñanza de las disciplinas a través de la computación</span> <em>Universidad ICESI · Oct 2021</em></li>
+              <li><span data-i18n="edu.cert8">Herramientas TIC para recursos didácticos</span> <em>SENA · Jul 2021</em></li>
+              <li><span data-i18n="edu.cert9">Aprendizaje socio-emocional en acción</span> <em>Universidad ICESI · Oct 2021</em></li>
+              <li><span data-i18n="edu.cert10">Pedagogía humana</span> <em>SENA · Jul 2021</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contacto">
+      <div class="container contact">
+        <header class="section__head section__head--light">
+          <span class="section__label" data-i18n="contact.label">Contacto</span>
+          <h2 data-i18n="contact.title">Hablemos de código, calidad o educación tech</h2>
+          <p data-i18n="contact.note">Referencias personales y profesionales disponibles a solicitud.</p>
+        </header>
+        <div class="contact__cards">
+          <a class="contact-card" href="mailto:juanpix2404@gmail.com">
+            <span class="contact-card__label" data-i18n="contact.email">Correo</span>
+            <span class="contact-card__value">juanpix2404@gmail.com</span>
+          </a>
+          <a class="contact-card" href="tel:+573152653476">
+            <span class="contact-card__label" data-i18n="contact.phone">Teléfono</span>
+            <span class="contact-card__value">+57 315 265 3476</span>
+          </a>
+          <a class="contact-card" href="https://github.com/juanrex04" target="_blank" rel="noopener noreferrer">
+            <span class="contact-card__label" data-i18n="contact.github">GitHub</span>
+            <span class="contact-card__value">github.com/juanrex04</span>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/juan-manuel-restrepo-moreno" target="_blank" rel="noopener noreferrer">
+            <span class="contact-card__label" data-i18n="contact.linkedin">LinkedIn</span>
+            <span class="contact-card__value">juan-manuel-restrepo-moreno</span>
+          </a>
+          <a class="contact-card contact-card--cv" data-cv-download href="assets/CV-Juan-Restrepo-ES.pdf" download="CV-Juan-Manuel-Restrepo-ES.pdf">
+            <span class="contact-card__label">CV</span>
+            <span class="contact-card__value" data-i18n="hero.ctaCv">Descargar CV</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Juan Manuel Restrepo · <span data-i18n="footer.tagline">Desarrollador &amp; docente de informática</span></p>
+  </footer>
+
+  <script src="./js/i18n.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
