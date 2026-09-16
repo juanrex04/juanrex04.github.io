@@ -1,7 +1,7 @@
 :root {
   --bg: #0c0f14;
   --bg-elevated: #141922;
-  --bg-muted: #f4f1eb;
+  --bg-muted: #111820;
   --text: #e8eaef;
   --text-soft: #a8b0bd;
   --text-dark: #1a1f28;
@@ -376,7 +376,7 @@ ul {
 
 .section--muted {
   background: var(--bg-muted);
-  color: var(--text-dark);
+  color: var(--text);
 }
 
 .section--contact {
@@ -409,7 +409,7 @@ ul {
 }
 
 .section--muted .section__label {
-  color: #2d6a62;
+  color: var(--accent-bright);
 }
 
 .section__head h2 {
@@ -467,9 +467,9 @@ ul {
 
 .skill-block {
   padding: 1.5rem;
-  background: #fff;
+  background: var(--bg-elevated);
   border-radius: var(--radius);
-  border: 1px solid rgba(26, 31, 40, 0.08);
+  border: 1px solid var(--border);
 }
 
 .skill-block h3 {
@@ -477,7 +477,7 @@ ul {
   font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #2d6a62;
+  color: var(--accent-bright);
 }
 
 .tag-list {
@@ -488,8 +488,8 @@ ul {
 
 .tag-list li {
   padding: 0.4rem 0.85rem;
-  background: #eef6f4;
-  color: var(--text-dark);
+  background: rgba(61, 155, 143, 0.15);
+  color: var(--text);
   border-radius: 999px;
   font-size: 0.88rem;
   font-weight: 500;
@@ -504,7 +504,7 @@ ul {
 
 .tag-list--plain li::before {
   content: "→ ";
-  color: #2d6a62;
+  color: var(--accent-bright);
 }
 
 .timeline {
@@ -615,13 +615,13 @@ ul {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #2d6a62;
+  color: var(--accent-bright);
 }
 
 .edu-list li,
 .cert-list li {
   padding: 1rem 0;
-  border-bottom: 1px solid rgba(26, 31, 40, 0.1);
+  border-bottom: 1px solid var(--border);
 }
 
 .edu-list li:last-child,
@@ -636,7 +636,7 @@ ul {
 
 .edu-list span {
   font-size: 0.92rem;
-  color: #4a5568;
+  color: var(--text-soft);
 }
 
 .cert-list li {
@@ -648,7 +648,72 @@ ul {
 .cert-list em {
   font-style: normal;
   font-size: 0.85rem;
-  color: #6b7280;
+  color: var(--text-soft);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.project-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.project-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-card h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+.project-card__link {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-bright);
+  border: 1px solid rgba(94, 196, 182, 0.35);
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.project-card__link:hover {
+  background: rgba(61, 155, 143, 0.15);
+  color: var(--accent-bright);
+}
+
+.project-card__desc {
+  margin: 0 0 1.25rem;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  flex-grow: 1;
+}
+
+.project-card .tag-list {
+  margin-top: auto;
 }
 
 .contact__cards {
@@ -771,5 +836,79 @@ ul {
   *::before,
   *::after {
     transition: none !important;
+  }
+}
+
+@media print {
+  .site-header,
+  .site-footer,
+  .hero__actions,
+  .hero__social,
+  .hero__meta,
+  .contact__cards,
+  .nav__toggle {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #1a1f28;
+  }
+
+  .section,
+  .hero {
+    padding: 1.5rem 0;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .section--muted,
+  .section--contact {
+    background: #fff;
+    color: #1a1f28;
+  }
+
+  .section--muted .section__label,
+  .section--muted h2,
+  .skill-block h3,
+  .edu-grid__title {
+    color: #2d6a62;
+  }
+
+  .skill-block,
+  .project-card,
+  .timeline__body {
+    background: #fff;
+    border: 1px solid #d4d8dd;
+    box-shadow: none;
+  }
+
+  .tag-list li {
+    background: #eef6f4;
+    color: #1a1f28;
+  }
+
+  .project-card__link {
+    border-color: #2d6a62;
+    color: #2d6a62;
+  }
+
+  .hero__title,
+  .section__head h2 {
+    color: #1a1f28;
+  }
+
+  .hero__lead,
+  .hero__subtitle,
+  .skill-block,
+  .project-card__desc,
+  .timeline__body,
+  .edu-list span,
+  .cert-list em,
+  .profile-card,
+  .profile-note {
+    color: #3a4350;
   }
 }
